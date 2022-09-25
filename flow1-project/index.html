@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pipper</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href=""><img src="/img/pipper.png" alt="logo" class="logoimg"></a>
+      
+    </div>
+    <div class="home">
+      <strong><p>Home</p></strong>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search Pipper">
+    </div>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Notifications</a>
+      <a href="#">Messages</a>
+      <a href="#">Bookmarks</a>
+      <a href="#">Lists</a>
+      <a href="#">Profile</a>
+      <a href="#">More</a>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">PIP</button>
+    </div>
+    <div class="feed">
+
+      <div class="form">
+        <form id="form" action="public/index.php" method="post">
+            <input id="username" placeholder="username..."> <br> <br>
+            <div class="wrapper">
+            <textarea maxlength="255" id="comment" class="form-control" cols="40" rows="10" placeholder="What's on your mind..."></textarea>
+            <div id="counter"></div>
+
+          </div>
+            <input type="submit" value="PIP" id="submit">
+        </form>
+
+
+
+        <div id="all-new-notes"></div>
+        </div>
+        <template id="my-template">
+          <div class="poststuff">
+          <img src="temp" alt="robot">
+          <h1>titel</h1>
+          <p>hej med dig</p>
+          </div>
+        </template> 
+
+
+
+    </div>
+    <div class="sidebar2">
+    <h2>Trends for you</h2>
+    <a href="#">Sneakers</a>
+    <a href="#">US</a>
+    <a href="#">Boxing</a>
+    <a href="#">Nike</a>
+    <a href="#">Adidas</a>
+    <a href="#">Tech</a>
+    <a href="#">Music</a>
+    <a href="#">Food</a>
+  </div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content" action="/action_page.php" method="post">
+
+    <div class="container4">
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <textarea name="comment" id="comment2" placeholder="What's on your mind?"></textarea>
+
+      <input type="submit">
+    </div>
+  </form>
+</div>
+
+</div>
+<script src="script.js"></script>
+<script src="modal.js"></script>
+<script src="counter.js"></script>
+</body>
+</html>
